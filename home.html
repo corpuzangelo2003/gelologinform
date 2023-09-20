@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+
+    <script>
+        function logout() {
+            let response = confirm("Are you sure you want to logout?");
+            if (response) {
+                window.close('Home.html');
+                window.open('index.html');
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <h1>Welcome to Home</h1>
+        <center>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3>Adding Two numbers: </h3>
+        <input type="number" id="num1">
+        <input type="number" id="num2">
+        <button type="button" onclick="addnum()">add</button>
+        <p>The sum is : </p><p id="demo2"> </p>
+
+    <script>
+        function addnum(){
+            let a = parseInt(document.getElementById("num1").value);
+            let b = parseInt(document.getElementById("num2").value);
+            let x = a + b; 
+            document.getElementById('demo2').innerHTML = x;
+        }
+    </script>
+
+    <br><br>
+
+      <h4>Subtract Two numbers: </h4>
+        <input type="number" id="num3">
+        <input type="number" id="num4">
+        <button type="button" onclick="subtractnum()">add</button>
+        <p>The subtract of number is : </p><p id="demo3"> </p>
+
+    <script>
+        function subtractnum(){
+            let a = parseInt(document.getElementById("num3").value);
+            let b = parseInt(document.getElementById("num4").value);
+            let x = a - b; 
+            document.getElementById('demo3').innerHTML = x;
+        }
+    </script>
+
+
+      <h5>Multiply Two numbers: </h5>
+        <input type="number" id="num5">
+        <input type="number" id="num6">
+        <button type="button" onclick="Multinum()">add</button>
+        <p>The subtract of number is : </p><p id="demo4"> </p>
+        <br>
+    <script>
+        function Multinum(){
+            let a = parseInt(document.getElementById("num5").value);
+            let b = parseInt(document.getElementById("num6").value);
+            let x = a * b; 
+            document.getElementById('demo4').innerHTML = x;
+        }
+    </script>
+    <br>
+
+    <h6>Dividing Two numbers: </h6>
+        <input type="number" id="num7">
+        <input type="number" id="num8">
+        <button type="button" onclick="Dividingnum()">add</button>
+        <p>The subtract of number is : </p><p id="demo5"> </p>
+
+    <script>
+        function Dividingnum(){
+            let a = parseInt(document.getElementById("num7").value);
+            let b = parseInt(document.getElementById("num8").value);
+            let x = a / b; 
+            document.getElementById('demo5').innerHTML = x;
+        }
+    </script>
+
+
+
+    </center>
+
+    </form>
+</body>
+</html>
